@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alicia Harner – Mechanical &amp; Aerospace Engineer</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#16202b;--mute:#5b6773;--line:#e1ded6;--acc:#c2410c;--acc2:#0f3d5e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161d;--card:#18212b;--ink:#eef1f4;--mute:#97a3af;--line:#2a3643;--acc:#fb923c;--acc2:#7cc0ea}}
+:root[data-theme="dark"]{--bg:#10161d;--card:#18212b;--ink:#eef1f4;--mute:#97a3af;--line:#2a3643;--acc:#fb923c;--acc2:#7cc0ea}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,"Times New Roman",serif}
+h1,h2,h3,nav,button,.tag,label,input,textarea,select{font-family:"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;gap:6px;align-items:center;height:56px}
+nav .logo{font-weight:700;margin-right:auto;letter-spacing:.02em}
+nav a{padding:8px 14px;border-radius:999px;color:var(--mute);text-decoration:none;font-size:14px;font-weight:600}
+nav a.on{background:var(--acc2);color:var(--bg)}
+.hero{padding:56px 0 28px}
+.hero .kick{color:var(--acc);font:700 13px "Helvetica Neue",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(34px,7vw,56px);line-height:1.05;margin:10px 0 14px}
+.hero p{font-size:18px;color:var(--mute);max-width:620px;margin:0 0 20px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 18px}
+.stat b{display:block;font:700 22px "Helvetica Neue",Arial,sans-serif;color:var(--acc2)}
+.stat span{font-size:13px;color:var(--mute)}
+h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:44px 0 16px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.job h3{margin:0;font-size:18px}.job .meta{color:var(--mute);font-size:14px;margin:2px 0 8px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.job ul{margin:8px 0 0;padding-left:20px}.job li{margin:5px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px}
+.skillrow{margin-bottom:16px}.skillrow h3{font-size:14px;margin:0 0 8px;color:var(--mute)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+footer{margin:60px 0 40px;color:var(--mute);font-size:14px;text-align:center}
+a{color:var(--acc2)}
+.view{display:none}.view.on{display:block}
+.home{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center;padding:56px 0 32px}
+@media(max-width:700px){.home{grid-template-columns:1fr;gap:24px;padding-top:32px}.portrait{max-width:260px}}
+.portrait img,.portrait .ph{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;display:block}
+.portrait .ph{display:flex;align-items:center;justify-content:center;background:var(--card);border:1px dashed var(--line);font:700 64px "Helvetica Neue",Arial,sans-serif;color:var(--acc2)}
+.home .kick{color:var(--acc);font:700 13px "Helvetica Neue",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.bio{font-size:18px;color:var(--mute);white-space:pre-wrap;margin:0 0 24px}
+.linkcard{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;cursor:pointer}
+.linkcard h3{margin:0 0 6px;font-size:20px;color:var(--acc2)}.linkcard p{margin:0;color:var(--mute);font-size:15px}
+button,.btn{background:var(--acc2);color:var(--bg);border:0;border-radius:10px;padding:10px 16px;font-weight:700;font-size:14px;cursor:pointer}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+button.del{background:transparent;color:#b91c1c;border:0;padding:4px 8px;font-size:12px}
+input,textarea,select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-size:15px;margin:4px 0 12px}
+label{font-size:13px;font-weight:700;color:var(--mute)}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:22px;overflow:hidden}
+.proj .body{padding:20px 22px}.proj h3{margin:0 0 4px;font-size:22px}
+.status{display:inline-block;font:700 11px "Helvetica Neue",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--acc);color:var(--bg)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:2px;background:var(--line)}
+.photos img{width:100%;height:180px;object-fit:cover;display:block;cursor:zoom-in}
+.upd{border-left:3px solid var(--acc);padding:2px 0 2px 14px;margin:14px 0}
+.upd small{color:var(--mute);font-family:"Helvetica Neue",Arial,sans-serif}
+.empty{text-align:center;color:var(--mute);padding:50px 20px;border:1px dashed var(--line);border-radius:16px}
+.admin{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:24px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.msg{font-size:13px;color:var(--mute)}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+#lb img{max-width:100%;max-height:100%;border-radius:8px}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><nav>
+<span class="logo">A. HARNER</span>
+<a href="#home" data-v="home" class="on">Home</a>
+<a href="#resume" data-v="resume">Resume</a>
+<a href="#projects" data-v="projects">Projects</a>
+</nav></div></header>
+
+<main class="wrap">
+<section class="view on" id="v-home">
+<div class="home"><div id="h-photo" class="portrait"></div>
+<div><div class="kick">Mechanical &amp; Aerospace Engineering · CWRU '29</div>
+<h1>Hi, I'm Alicia.</h1>
+<p id="h-bio" class="bio"></p>
+<div class="row"><button onclick="go('resume')">View my resume</button><button class="ghost" onclick="go('projects')">See my projects</button><a href="mailto:alicia.harner07@gmail.com">Email me</a></div>
+<div id="h-admin"></div></div></div>
+<div class="grid2" style="margin-top:20px">
+<a class="linkcard" onclick="go('resume')"><h3>Resume →</h3><p>Aerospace design at Allen Aircraft, CNC machining, skills and education.</p></a>
+<a class="linkcard" onclick="go('projects')"><h3>Projects →</h3><p>Photos and progress updates from things I'm building.</p></a>
+</div>
+<footer>Ravenna, OH · <a href="mailto:alicia.harner07@gmail.com">alicia.harner07@gmail.com</a></footer>
+</section>
+
+<section class="view" id="v-resume">
+<div class="hero">
+<div class="kick">Mechanical &amp; Aerospace Engineering · CWRU '29</div>
+<h1>Alicia Harner</h1>
+<p>Design engineer and machinist. I design aircraft hydraulic and fuel-system hardware by day, and teach people how to make things on the shop floor.</p>
+<div class="row"><a class="btn" href="mailto:alicia.harner07@gmail.com" style="text-decoration:none">Get in touch</a><button class="ghost" onclick="go('projects')">See my projects</button></div>
+<div class="stats">
+<div class="stat"><b>4.0</b><span>GPA · Dean's List</span></div>
+<div class="stat"><b>Boeing · Anduril</b><span>Aerospace customers served</span></div>
+<div class="stat"><b>32nd</b><span>Philippines competitive programming</span></div>
+<div class="stat"><b>43,000</b><span>views on a recruiting video</span></div>
+</div></div>
+
+<h2>Experience</h2>
+<div class="job"><h3>Design Engineer · Allen Aircraft</h3><div class="meta"><span>Aerospace hydraulics &amp; fuel systems</span><span>June 2026 – Present</span></div><ul>
+<li>Designed check valves, hydraulic couplings and pressure-relief valves for customers such as Boeing and Anduril.</li>
+<li>Ran flow simulation and spring analysis to design valve components and provide proof of design.</li>
+<li>Wrote ATP, QTP and QSAR reports documenting requirements, test procedures and objective evidence of compliance.</li></ul></div>
+<div class="job"><h3>Makerspace Technician · Sears think[box]</h3><div class="meta"><span>Case Western Reserve University</span><span>August 2026 – Present</span></div><ul>
+<li>Gave design-for-manufacturing (DFM) guidance to improve manufacturability, machining efficiency and part quality.</li>
+<li>Maintained lathes, mills and bandsaws; troubleshot CNC router faults and G-code errors.</li>
+<li>Designed custom parts, fixtures and shop equipment to improve organization and accessibility.</li></ul></div>
+<div class="job"><h3>Manufacturing Engineer · CWRU Motorsports</h3><div class="meta"><span>Formula-style race team</span><span>Aug 2025 – Aug 2026</span></div><ul>
+<li>Wrote Fusion360 CAM for critical drivetrain parts, including the Rear Hub and 4WD Bevel Case.</li>
+<li>Machined 6061-T6 and 7075-T6 aluminum in 3- and 4-axis on a HAAS Super Mini Mill and a 1993 HAAS VF-3.</li>
+<li>Cut setup complexity and machining time through direct DFM input to designers; serviced the VF-3 tool umbrella and spindle coolant loop.</li></ul></div>
+<div class="job"><h3>UTECH IT Service Help · Case Western</h3><div class="meta"><span>Student support</span><span>Aug 2025 – Present</span></div><ul>
+<li>Troubleshoot software issues and configure course-required applications for students.</li></ul></div>
+
+<h2>Skills</h2>
+<div class="skillrow"><h3>Design</h3><div class="tags"><span class="tag">Fusion360</span><span class="tag">SolidWorks</span><span class="tag">Flow Simulation</span><span class="tag">SolidWorks FEA</span><span class="tag">NX (Unigraphics)</span><span class="tag">AutoCAD</span></div></div>
+<div class="skillrow"><h3>Manufacturing</h3><div class="tags"><span class="tag">CNC Mill</span><span class="tag">Lathe</span><span class="tag">Knee Mill</span><span class="tag">Drill Press</span><span class="tag">CAM</span><span class="tag">DFM</span></div></div>
+<div class="skillrow"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span><span class="tag">MATLAB</span><span class="tag">HTML/CSS</span></div></div>
+
+<h2>Education</h2>
+<div class="job"><h3>Case Western Reserve University</h3><div class="meta"><span>B.S. Mechanical and Aerospace Engineering · GPA 4.0, Dean's List</span><span>2025 – 2029</span></div><div class="msg">Coursework: Dynamics, Statics, Mechanical Manufacturing, Calculus 3</div></div>
+
+<h2>Beyond engineering</h2>
+<div class="grid2">
+<div class="job"><h3>Competitive Programming</h3><div class="meta"><span>NOI.PH</span></div>Ranked 32nd in the Philippines in Python and C++, designing algorithms for the national competition.</div>
+<div class="job"><h3>Tutor · Cebu, Philippines</h3><div class="meta"><span>2019 – 2025</span></div>Made math tutorial videos in Bisaya, tutored SAT English, and helped immigrant students transition into English-language classrooms.</div>
+<div class="job"><h3>Volleyball Captain</h3><div class="meta"><span>2021 – 2025</span></div>Captained the high school team and produced highlight videos that supported college recruiting, one reaching 43,000 views.</div>
+</div>
+<footer>Ravenna, OH · <a href="mailto:alicia.harner07@gmail.com">alicia.harner07@gmail.com</a></footer>
+</section>
+
+<section class="view" id="v-projects">
+<div class="hero" style="padding-bottom:10px"><div class="kick">Build log</div><h1 style="font-size:clamp(30px,6vw,44px)">Projects</h1><p>Work in progress, photos and updates from the shop and the desk.</p></div>
+<div id="admin"></div>
+<div id="list"><div class="empty">Loading projects…</div></div>
+</section>
+</main>
+<div id="lb" onclick="this.style.display='none'"><img alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const V=['home','resume','projects'];
+function go(v){location.hash=v}
+function route(){const h=location.hash.slice(1);const v=V.includes(h)?h:'home';
+document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+v));
+document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.v===v));window.scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+
+let db=null,assets=null,canEdit=false,projects=[],site={};
+const DEFAULT_BIO="I'm a mechanical and aerospace engineering student at Case Western Reserve University and a design engineer at Allen Aircraft, where I design hydraulic and fuel-system valves for aerospace customers.\n\nI also work as a makerspace technician, helping people design for manufacturing, and I like taking a part all the way from CAD to CAM to the finished piece on the machine.";
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=d=>{try{return new Date(d).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'})}catch(e){return ''}};
+
+async function init(){
+ try{
+  if(!window.claude){render();return}
+  const user=await claude.use('user');canEdit=!!(user&&user.canEdit());
+  db=await claude.use('db');assets=canEdit?await claude.use('assets'):null;
+  if(!db){render();return}
+  const t=setTimeout(render,10000);
+  db.doc('site/profile').onSnapshot(s=>{site=s.exists?(s.data()||{}):{};renderHome()},()=>{});
+  db.collection('projects').orderBy('created','desc').onSnapshot(s=>{clearTimeout(t);projects=s.docs.map(d=>({id:d.id,...d.data()}));render()},()=>{clearTimeout(t);render()});
+ }catch(e){render()}
+}
+
+async function uploadFiles(files,status){
+ const ids=[];
+ for(const f of files){status.textContent='Uploading '+f.name+'…';
+  try{const r=await assets.upload(f);ids.push(r.id)}catch(e){status.textContent='Upload failed: '+(e.message||e.code||'error')}}
+ status.textContent='';return ids;
+}
+
+function adminHTML(){
+ if(!canEdit||!db)return '';
+ return `<div class="admin"><h3 style="margin:0 0 12px">New project</h3>
+ <label>Title</label><input id="n-title" placeholder="e.g. Hydraulic check valve redesign">
+ <label>Description</label><textarea id="n-desc" rows="3" placeholder="What is it and why are you building it?"></textarea>
+ <div class="row"><div style="flex:1;min-width:150px"><label>Status</label><select id="n-status"><option>In progress</option><option>Planning</option><option>Completed</option></select></div>
+ <div style="flex:2;min-width:200px"><label>Photos</label><input id="n-files" type="file" accept="image/*" multiple></div></div>
+ <div class="row"><button id="n-add">Add project</button><span class="msg" id="n-msg"></span></div></div>`;
+}
+
+function projHTML(p){
+ const ph=(p.photos||[]).map(id=>`<img loading="lazy" src="/_blob/${esc(id)}" alt="">`).join('');
+ const ups=(p.updates||[]).slice().reverse().map((u,i)=>`<div class="upd"><small>${fmt(u.date)}</small><div>${esc(u.text)}</div>${(u.photos||[]).length?`<div class="photos" style="margin-top:8px;border-radius:10px;overflow:hidden">${u.photos.map(id=>`<img loading="lazy" src="/_blob/${esc(id)}" alt="">`).join('')}</div>`:''}</div>`).join('');
+ const ctl=canEdit?`<hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+ <label>Post an update</label><textarea rows="2" data-t="${p.id}" placeholder="What changed? What's next?"></textarea>
+ <div class="row"><input type="file" accept="image/*" multiple data-f="${p.id}" style="flex:1;min-width:180px;margin:0"><button data-u="${p.id}">Post update</button><button class="del" data-d="${p.id}">Delete project</button></div><div class="msg" data-m="${p.id}"></div>`:'';
+ return `<article class="proj">${ph?`<div class="photos">${ph}</div>`:''}<div class="body"><span class="status">${esc(p.status||'')}</span><h3>${esc(p.title)}</h3><div class="msg">Started ${fmt(p.created)}</div><p>${esc(p.description)}</p>${ups?`<h2 style="margin:20px 0 6px">Updates</h2>${ups}`:''}${ctl}</div></article>`;
+}
+
+function renderHome(){
+ const ph=$('#h-photo');if(!ph)return;
+ ph.innerHTML=site.photo?`<img src="/_blob/${esc(site.photo)}" alt="Alicia Harner">`:'<div class="ph">AH</div>';
+ $('#h-bio').textContent=site.bio||DEFAULT_BIO;
+ const a=$('#h-admin');
+ if(!(canEdit&&db&&assets)){a.innerHTML='';return}
+ if(a.querySelector('details[open]'))return;
+ a.innerHTML=`<details class="admin" style="margin-top:22px"><summary style="cursor:pointer;font-weight:700">Edit photo &amp; bio</summary><label style="display:block;margin-top:12px">Your photo</label><input id="h-file" type="file" accept="image/*"><label>Bio</label><textarea id="h-edit" rows="6"></textarea><div class="row"><button id="h-save">Save</button><span class="msg" id="h-msg"></span></div></details>`;
+ $('#h-edit').value=site.bio||DEFAULT_BIO;
+ $('#h-save').onclick=async()=>{
+  const m=$('#h-msg'),f=$('#h-file').files[0];let photo=site.photo||'';
+  if(f){const ids=await uploadFiles([f],m);if(ids[0])photo=ids[0]}
+  try{await db.doc('site/profile').set({bio:$('#h-edit').value.trim(),photo});m.textContent='Saved'}
+  catch(e){m.textContent='Could not save: '+(e.message||e.code)}
+ };
+}
+
+function render(){
+ renderHome();
+ $('#admin').innerHTML=adminHTML();
+ $('#list').innerHTML=projects.length?projects.map(projHTML).join(''):
+  `<div class="empty">${db?(canEdit?'No projects yet. Add your first one above.':'Projects are on the way. Check back soon.'):'Projects will appear here once this site is opened with a signed-in viewer.'}</div>`;
+ const add=$('#n-add');
+ if(add)add.onclick=async()=>{
+  const title=$('#n-title').value.trim();if(!title){$('#n-msg').textContent='Add a title first.';return}
+  add.disabled=true;
+  const photos=assets?await uploadFiles($('#n-files').files,$('#n-msg')):[];
+  try{await db.collection('projects').add({title,description:$('#n-desc').value.trim(),status:$('#n-status').value,photos,updates:[],created:new Date().toISOString()})}
+  catch(e){$('#n-msg').textContent='Could not save: '+(e.message||e.code)}
+  add.disabled=false;
+ };
+ document.querySelectorAll('[data-u]').forEach(b=>b.onclick=async()=>{
+  const id=b.dataset.u,p=projects.find(x=>x.id===id),ta=document.querySelector(`[data-t="${id}"]`),m=document.querySelector(`[data-m="${id}"]`);
+  const text=ta.value.trim();const files=document.querySelector(`[data-f="${id}"]`).files;
+  if(!text&&!files.length)return;b.disabled=true;
+  const photos=await uploadFiles(files,m);
+  try{await db.doc('projects/'+id).update({updates:[...(p.updates||[]),{date:new Date().toISOString(),text,photos}]})}
+  catch(e){m.textContent='Could not save: '+(e.message||e.code)}
+  b.disabled=false;
+ });
+ document.querySelectorAll('[data-d]').forEach(b=>b.onclick=async()=>{
+  if(confirm('Delete this project and its updates?'))try{await db.doc('projects/'+b.dataset.d).delete()}catch(e){}
+ });
+ document.querySelectorAll('.photos img').forEach(i=>i.onclick=()=>{const lb=$('#lb');lb.querySelector('img').src=i.src;lb.style.display='flex'});
+}
+init();
+</script>
+</body>
+</html>
